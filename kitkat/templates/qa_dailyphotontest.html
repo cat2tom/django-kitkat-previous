@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js'></script>
+{% load staticfiles %}
+<script src="{{ STATIC_URL}}script.js"></script>
+<form action="{% url 'kitkat:process_dailyphotontest' %}"  method = "post" >{% csrf_token %}
+    {{ formA.as_p }}
+	{{ formB.as_p }}
+	<p id = "test"></p>
+	<p id = "pass">.</p>
+    <input type="submit" value="Enter" />
+</form>

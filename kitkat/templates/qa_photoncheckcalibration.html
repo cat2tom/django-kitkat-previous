@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js'></script>
+{% load staticfiles %}
+<script src="{{ STATIC_URL}}script2.js"></script>
+<form action="{% url 'kitkat:process_photoncheckcalibration' %}"  method = "post" >{% csrf_token %}
+    {{ formA.as_p }}
+	{{ formB.as_p }}
+	{{ formC.as_p }}	
+	{{ formD.as_p }}
+	{{ formE.as_p }}
+    <input type="submit" value="Enter" />
+</form>
+

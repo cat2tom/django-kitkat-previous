@@ -1,0 +1,33 @@
+[
+	{
+		"model":"kitkat.electrometer",
+		"pk":1, 
+		"fields": {
+			"electrometer_name":"2610/133"
+		}
+	},
+	{
+		"model":"kitkat.electrometer",
+		"pk":2, 
+		"fields": {
+			"electrometer_name":"2570/1017"
+		}
+	},
+	{
+		"model":"kitkat.electrometer",
+		"pk":3, 
+		"fields": {
+			"electrometer_name":"Dose 1"
+		}
+	},
+	{
+		"model":"kitkat.ionchamber",
+		"pk":1, 
+		"fields": {
+			"val1":2571,
+			"val2":2044,
+			"expected_reading_6MV":2.522,
+			"expected_reading_18MV":2.531
+		}
+	},	
+]		

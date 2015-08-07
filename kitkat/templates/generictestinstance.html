@@ -1,0 +1,8 @@
+
+<form action="{% url 'kitkat:add_generictestinstance' %}" method = "post" >{% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Continue" />
+</form>
+
+<a href='/kitkat/home'>Home</a>
+

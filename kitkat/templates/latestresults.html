@@ -1,0 +1,9 @@
+{% if str_values %}
+	<ul>
+	{% for str in str_values %}
+	<li>{{ str }}</li>
+	{% endfor %}
+	</ul>
+{% else %}
+	<p>No results.</p>
+{% endif %}

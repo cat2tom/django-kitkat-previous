@@ -1,0 +1,128 @@
+[
+	{
+		"model":"kitkat.machine",
+		"pk":1, 
+		"fields": {
+			"machine_name":"LA1"
+		}
+	},
+	{
+		"model":"kitkat.machine",
+		"pk":2, 
+		"fields": {
+			"machine_name":"LA2"
+		}
+	},
+	{
+		"model":"kitkat.machine",
+		"pk":3, 
+		"fields": {
+			"machine_name":"LA3"
+		}
+	},
+	{
+		"model":"kitkat.electrometer",
+		"pk":1, 
+		"fields": {
+			"electrometer_name":"2610/133"
+		}
+	},
+	{
+		"model":"kitkat.electrometer",
+		"pk":2, 
+		"fields": {
+			"electrometer_name":"2570/1017"
+		}
+	},
+	{
+		"model":"kitkat.electrometer",
+		"pk":3, 
+		"fields": {
+			"electrometer_name":"Dose 1"
+		}
+	},
+	{
+		"model":"kitkat.ionchamber",
+		"pk":1, 
+		"fields": {
+			"val1":2571,
+			"val2":2044,
+			"expected_reading_6MV":2.522,
+			"expected_reading_18MV":2.531
+		}
+	},
+	{
+		"model":"kitkat.qatestdefinition",
+		"pk":1,
+		"fields": {
+			"test_name":"Daily Photon Test",
+			"frequency":"Daily",
+			"test_equip_required":false,
+			"temp_pressure_required":false
+		}
+	},
+	{
+		"model":"kitkat.qatestattributedefinition",
+		"pk":1,
+		"fields": {
+			"qa_test_def_id":1,
+			"label":"6MV Exposure",
+			"attribute_type":"Float Value",
+			"form_order":1
+		}
+	},
+	{	"model":"kitkat.qatestdefinition",
+		"pk":2,
+		"fields": {
+			"test_name":"Photon Check Calibration",
+			"frequency":"Daily",
+			"test_equip_required":true,
+			"temp_pressure_required":true
+		}
+	},
+	{
+		"model":"kitkat.qatestattributedefinition",
+		"pk":2,
+		"fields": {
+			"qa_test_def_id":2,
+			"label":"Output Readings",
+			"attribute_type":"Float Average Value",
+			"form_order":1
+		}
+	},
+		{
+		"model":"kitkat.qatestattributedefinition",
+		"pk":3,
+		"fields": {
+			"qa_test_def_id":2,
+			"label":"DCF",
+			"attribute_type":"Float Value",
+			"form_order":2
+		}
+	},
+	{
+		"model":"kitkat.qatestattributedefinition",
+		"pk":4,
+		"fields": {
+			"qa_test_def_id":2,
+			"label":"Energy Check: Readings",
+			"attribute_type":"Float Average Value",
+			"form_order":3
+		}
+	},
+	{
+		"model":"kitkat.qatestattributedefinition",
+		"pk":5,
+		"fields": {
+			"qa_test_def_id":2,
+			"label":"Ratio",
+			"attribute_type":"Float Value",
+			"form_order":4
+		}
+	}
+
+
+
+
+]		
+		

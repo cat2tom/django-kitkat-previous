@@ -1,0 +1,18 @@
+	{
+		"model":"kitkat.qatestattributedefinition",
+		"pk":null,
+		"fields": {
+			"qa_test_def_id":2,
+			"label":"Output Readings",
+			"attribute_type":"Float Average Value"
+		}
+	},
+	{
+		"model":"kitkat.qatestattributedefinition",
+		"pk":null,
+		"fields": {
+			"qa_test_def_id":2,
+			"label":"Expected Value",
+			"attribute_type":"Calc Float Value"
+		}
+	},

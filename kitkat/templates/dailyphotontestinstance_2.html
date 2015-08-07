@@ -1,0 +1,13 @@
+<form action="/kitkat/add_dailyphotontestinstance/second" method = "post" >{% csrf_token %}
+    {{ form.as_p }}
+	{% if form.test_pass_defined %}
+		{% if form.test_pass %}<p>Pass</p>
+		{% else %}<p>Fail</p>
+		{% endif %}
+	{% else %}<p><br></p>
+	{% endif %}
+    		<input type="submit" value="Enter" />
+</form>
+
+<a href='/kitkat/home'>Home</a>
+
